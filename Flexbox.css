@@ -1,0 +1,30 @@
+.menuitem:hover {
+    background-color: lightgray;
+    border-bottom: 2px solid black;
+}
+
+.menuitem {
+    list-style: none;
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
