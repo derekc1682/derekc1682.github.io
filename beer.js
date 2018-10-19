@@ -2,7 +2,7 @@
 
 var anotherLine = document.querySelector('#anotherLine');
 
-var beer = 99;
+var beer = 3;
 
 anotherLine.addEventListener(
     'click',  
@@ -21,11 +21,11 @@ var mkBottle = function(){
     imgbottle.src = 'images/beer.png';
     return (imgbottle)};
 
-var mkBottles = function(num) {
+var mkBottles = function(beer) {
     //create the div
     var divElem = document.createElement('div');
-    while (num > 0) {
-        num -= 1;
+    while (beer > 0) {
+        beer -= 1;
         var beerImg = mkBottle();
         divElem.appendChild(beerImg);
     }
@@ -40,10 +40,11 @@ var mkLyric = function(text) {
 
 }
 
-var mkLyric1 = function(text) {
+var mkLyric1 = function(num) {
     var Lyric1Elem = document.createElement('p');
     Lyric1Elem.textContent = line2(beer);
     return (Lyric1Elem);
+    
 
 }
 
